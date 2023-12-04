@@ -1,0 +1,89 @@
+
+
+/* 
+These are the colors used on this website:
+#9BABB8
+#EEE3CB
+#D7C0AE
+#967E76
+*/
+
+img {
+  /* object-fit: contain; */
+  width: 100%;
+}
+
+body {
+  background-color: #EEE3CB;
+}
+
+
+
+nav {
+  background-color: #9BABB8;
+  
+}
+
+nav ul a {
+  color: black !important;
+  font-size: 1.25em;
+}
+
+.brand-logo img {
+  margin-top: 2px;
+  border-radius: 40%;
+}
+
+.sidenav {
+  background-color: #EEE3CB;
+  font-weight: 900;
+}
+
+.sidenav li > a {
+  color: #000;
+  font-size: 1.25em;
+}
+
+
+.hero_image {
+  position: relative;
+  background: transparent;
+  z-index: 11;
+}
+
+.hero_image::before {
+  content: " ";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  background-color: #0a3b63;
+  z-index: 1;
+}
+
+/* .carousel {
+  margin-bottom: 500px;
+} */
+
+.carousel-item img {
+  /* max-height:800px; 
+  width: auto; /* Maintain the aspect ratio */
+  margin: auto; /* Center the image horizontally */
+}
+
+
+
+
+.page-footer {
+  background-color: #D7C0AE !important;
+}
+
+.footer-copyright {
+  background-color: #967E76 !important;
+}
+
+.footer-copyright .container {
+  font-weight: 700;
+}
