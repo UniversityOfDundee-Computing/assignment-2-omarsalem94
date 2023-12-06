@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 
-fetch("https://api.thedogapi.com/v1/images/search?limit=10")
+fetch("https://api.thedogapi.com/v1/images/search?limit=15")
 .then(resp => resp.json())
 .then(function(data) {
   console.log(data);
@@ -32,10 +32,12 @@ fetch("https://api.thedogapi.com/v1/images/search?limit=10")
 
     // Initialize Materialize Carousel
     M.Carousel.init(carousel, {
+      duration: 300,
       fullWidth: true,
       indicators: true,
       dist: 0,
-      padding: 10
+      padding: 10,
+      numVisible: 2
     });
 
     console.log(document.getElementsByTagName("img"));
