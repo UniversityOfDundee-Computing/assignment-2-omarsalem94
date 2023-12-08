@@ -4,8 +4,11 @@ $(document).ready(function(){
   $('.carousel').carousel();
 });
 
+// API key from https://www.thedogapi.com
+// It used to get all breeds information
+let api_key = 'api_key=live_5Z8ovOq9Ol9IKTqHssHvOlrvNYdzY1v6SPcoZ2xRXIOvLd8tdISWbowR9oh6y3wN';
 
-fetch("https://api.thedogapi.com/v1/images/search?limit=15")
+fetch("https://api.thedogapi.com/v1/images/search?limit=10")
 .then(resp => resp.json())
 .then(function(data) {
   console.log(data);
