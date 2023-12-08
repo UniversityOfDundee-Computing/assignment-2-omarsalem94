@@ -7,67 +7,84 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/resources/styles/style.css">
+  <link rel="stylesheet" href="./resources/styles/style.css">
   <title>Good Boy</title>
 </head>
 <body>
-  
   <header>
     <nav>
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo"><img src="resources/images/logo1.png" alt="" width="60px" height="60px"></a>
+        <a href="#" class="brand-logo"><img src="./resources/images/logo1.png" alt="" width="60px" height="60px"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Sass</a></li>
-          <li><a href="#">Components</a></li>
-          <li><a href="#">JavaScript</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./resources/pages/breeds.html">Breeds</a></li>
         </ul>
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Sass</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">Javascript</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./resources/pages/breeds.html">Breeds</a></li>
     </ul>
   </header>
-
-
   <main class="container">
     <section class="hero">
-      <div class="row valign-wrapper">
-        <div class="col l4">
+      <div class="row ">
+        <div class="col l6 m12 s12 hero_text">
           <h1 class="">Good Boy</h1>
-          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora laborum aliquid doloribus incidunt suscipit iure dolorem.
+          <p class="">This website is dedicated to show appretiation to man's best friend (dog). Get to see random images, and check the most popular breeds and learn more about them.
           </p>
         </div>
-        <div class="col l7 hero_image">
-          <img src="resources/images/Mac_Author_Page-SM.png" alt="">
+        <div class="col l6 m12 s12">
+          <img class="hero_image" src="./resources/images/hero_image.png" alt="">
         </div>
       </div>
     </section>
-
-    <div class="carousel">
-
-    </div>
+    <section class="row random_api_dog">
+      <div class="col l12">
+        <h2>Random Dog Images</h2>
+        <p>Refresh to see new images!</p>
+        <div class="carousel valign-wrapper">
+        </div>
+      </div>
+    </section>
+    <section class="row dog_reasons">
+      <h2>Reason why you should get a dog</h2>
+        <div class="col l4 m8 s12">
+          <i class="material-icons large">favorite</i>
+          <h3>Companionship</h3>
+          <p>Dogs are known for their loyalty and companionship. They are social animals that thrive on human interaction, providing a constant and loving presence.</p>
+        </div>
+        <div class="col l4 m8 s12">
+          <i class="material-icons large valign-wrapper">pets</i>
+          <h3>Unconditional Love</h3>
+          <p>Dogs offer unconditional love and acceptance. They don't judge, and their affection is often unwavering, creating a deep emotional connection with their owners.</p>
+        </div>
+        <div class="col l4 m8 s12">
+          <i class="material-icons large">security</i>
+          <h3>Security</h3>
+          <p>Dogs are often protective of their owners and their homes, providing a sense of security. Many people feel safer knowing they have a loyal and vigilant companion.</p>
+        </div>
+    </section>
   </main>
-
-
-
-
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="black-text">Footer Content</h5>
-          <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <div class="row">
+            <h5 class="black-text footer_title1">Sign up for more</h5>
+              <div class="input-field col l6 s12">
+                <i class="material-icons prefix">email</i>
+                <label for="email">Email</label>
+                <input id="email" type="email" class="validate">
+              </div>
+          </div>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Links</h5>
           <ul>
-            <li><a class="black-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="black-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="black-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="black-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="black-text text-lighten-3" href="#!">Home</a></li>
+            <li><a class="black-text text-lighten-3" href="#!">Breeds</a></li>
           </ul>
         </div>
       </div>
@@ -78,12 +95,9 @@
       </div>
     </div>
   </footer>
-
-
-
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="resources/js/main.js"></script>
+  <script src="./resources/js/main.js"></script>
 </body>
 </html>

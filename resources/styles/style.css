@@ -8,6 +8,52 @@ These are the colors used on this website:
 #967E76
 */
 
+@font-face {
+  font-family: GoodBoy;
+  src: url(../fonts/good-boy-font/GoodBoy-ZVJrl.ttf);
+}
+
+@font-face {
+  font-family: GoodPawoo;
+  src: url(../fonts/good-pawoo-display-font/GoodPawooDisplay-qZd96.ttf);
+}
+
+@font-face {
+  font-family: JosefinSans;
+  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: LittlePaws;
+  src: url(../fonts/little-paws-font/LittlePaws-8MZqZ.ttf);
+}
+
+@font-face {
+  font-family: Paw;
+  src: url(../fonts/mf-paw-prints/MF\ Paw\ Prints.ttf);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url(../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+
 img {
   /* object-fit: contain; */
   width: 100%;
@@ -15,13 +61,15 @@ img {
 
 body {
   background-color: #EEE3CB;
+  font-family: Ubuntu;
 }
 
 
 
 nav {
   background-color: #9BABB8;
-  
+  font-family: GoodBoy;
+  font-size: 1.35rem;
 }
 
 nav ul a {
@@ -44,28 +92,29 @@ nav ul a {
   font-size: 1.25em;
 }
 
-
-.hero_image {
-  position: relative;
-  background: transparent;
-  z-index: 11;
+.hero {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.hero_image::before {
-  content: " ";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  top: 30px;
-  left: 20px;
-  background-color: #0a3b63;
-  z-index: 1;
+.hero .hero_text {
+  margin-top: 5vw;
 }
 
-/* .carousel {
-  margin-bottom: 500px;
-} */
+.hero h1 {
+  font-family: GoodBoy;
+  font-size: 7rem;
+}
+
+.random_api_dog {
+  text-align: center;
+}
+
+
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .carousel-item img {
   /* max-height:800px; 
@@ -73,11 +122,34 @@ nav ul a {
   margin: auto; /* Center the image horizontally */
 }
 
+.carousel .carousel-item {
+  width:400px !important;
+  object-fit: contain;
+}
 
 
+.dog_reasons {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 30px 0 30px;
+}
+
+.dog_reasons h2 {
+  margin-bottom: 1.5em;
+}
+
+.dog_reasons h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
 .page-footer {
   background-color: #D7C0AE !important;
+}
+
+.page-footer .footer_title1 {
+  margin-left: 15px;
 }
 
 .footer-copyright {
@@ -86,4 +158,20 @@ nav ul a {
 
 .footer-copyright .container {
   font-weight: 700;
+}
+
+
+
+
+
+
+/* ******************************** */
+
+.dog_breeds {
+  margin-top: 3vw;
+  text-align: center;
+}
+
+.dog_breeds form {
+  margin-bottom: 8vw;
 }
