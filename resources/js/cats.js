@@ -84,11 +84,9 @@ fetch(`https://api.thecatapi.com/v1/images/search?limit=10`)
   .then(resp => resp.json())
   .then(function(data) {
     
-    // Create a paragraph element to display the fact
     let factParagraph = document.createElement('p');
     factParagraph.textContent = data.fact
 
-    // Append the fact to the div
     catFactDiv.appendChild(factParagraph);
   })
   .catch(function(error) {
@@ -114,7 +112,8 @@ function createCard(breed, imageUrl, id) {
 }
 
 // Initial fetch for a couple of breeds
-const initialBreeds = ['Chausie', 'Donskoy', 'Himalayan', 'Abyssinian', 'Siamese', 'Sphynx']; // Example breeds
+const initialBreeds = ['Chausie', 'Donskoy', 'Himalayan', 'Abyssinian', 'Siamese', 'Sphynx'];
+
 const cardContainer = document.getElementById('breed-card-container');
 
 // Use Promise.all to wait for all initial fetch requests to complete

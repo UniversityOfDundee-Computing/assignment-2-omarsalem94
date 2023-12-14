@@ -29,7 +29,6 @@ fetch(url)
   image.style.maxWidth = '100%';
   image.style.height = 'auto';
   image.style.width = '100%';
-  // image.style.maxHeight = '500px';
   dogDetailContainer.appendChild(image);
 
   // Create a table to display dog information using Materialize
