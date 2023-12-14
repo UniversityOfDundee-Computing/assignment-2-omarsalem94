@@ -1,14 +1,21 @@
+// Rules to activate materialize components
 $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.collapsible').collapsible();
   $('.carousel').carousel();
 });
 
+// API used in the website:
+// https://api.thedogapi.com
+// https://dog.ceo/dog-api
+// 
+
 // API key from https://www.thedogapi.com
 // It used to get all breeds information
 let api_key = 'api_key=live_5Z8ovOq9Ol9IKTqHssHvOlrvNYdzY1v6SPcoZ2xRXIOvLd8tdISWbowR9oh6y3wN';
+// https://api.thedogapi.com/v1/images/search?limit=10&api_key=${api_key}
 
-fetch("https://api.thedogapi.com/v1/images/search?limit=10")
+fetch(`https://dog.ceo/api/breeds/image/random/5`)
 .then(resp => resp.json())
 .then(function(data) {
   console.log(data);
@@ -16,15 +23,16 @@ fetch("https://api.thedogapi.com/v1/images/search?limit=10")
   let carousel = document.querySelector('.carousel');
 
     // Loop through the array of image URLs and create carousel items
-    data.forEach((catImage, index) => {
+    // data.forEach((dogImage) => {
+      data.message.forEach((dogImage) => {
       // Create a new carousel item
-      const carouselItem = document.createElement('a');
+      const carouselItem = document.createElement('div');
       carouselItem.classList.add('carousel-item');
-      carouselItem.href = '#' + (index + 1); // Set the href attribute
     
       // Create an image element and set its src attribute
       const imgElement = document.createElement('img');
-      imgElement.src = catImage.url;
+      imgElement.classList.add('card-carousel');
+      imgElement.src = dogImage;
     
       // Append the image to the carousel item
       carouselItem.appendChild(imgElement);

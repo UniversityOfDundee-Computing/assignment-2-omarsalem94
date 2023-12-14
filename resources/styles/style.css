@@ -93,8 +93,8 @@ nav ul a {
 }
 
 .hero {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .hero .hero_text {
@@ -120,6 +120,12 @@ nav ul a {
   /* max-height:800px; 
   width: auto; /* Maintain the aspect ratio */
   margin: auto; /* Center the image horizontally */
+}
+
+.card-carousel {
+  width: 100%; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+  object-fit: cover; /* This ensures the image maintains its aspect ratio */
 }
 
 .carousel .carousel-item {
@@ -174,4 +180,29 @@ nav ul a {
 
 .dog_breeds form {
   margin-bottom: 8vw;
+}
+
+
+
+.card-image {
+  width: 100%; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+  object-fit: auto; /* This ensures the image maintains its aspect ratio */
+}
+
+
+.more_info {
+  background-color: #9BABB8;
+}
+
+.more_info:hover {
+  background-color: #D7C0AE;
+}
+
+
+
+table {
+  width: 90%;
+  margin: auto;
+  font-size: 1.45rem;
 }
