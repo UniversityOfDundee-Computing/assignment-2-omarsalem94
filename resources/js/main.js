@@ -9,7 +9,7 @@
 // https://api.thecatapi.com/v1/images/
 
 // For all cat breeds and information about each breed:
-// 
+// https://api.thecatapi.com/v1/breeds/
 
 // For random dog fact
 // https://dogapi.dog/api/v2/facts
@@ -97,11 +97,9 @@ fetch(`https://dog.ceo/api/breeds/image/random/5`)
   .then(resp => resp.json())
   .then(function(data) {
     
-    // Create a paragraph element to display the fact
     let factParagraph = document.createElement('p');
     factParagraph.textContent = data.data[0].attributes.body
 
-    // Append the fact to the div
     dogFactDiv.appendChild(factParagraph);
   })
   .catch(function(error) {

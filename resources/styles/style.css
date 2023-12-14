@@ -1,3 +1,7 @@
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+
 /* 
 These are the colors used on this website:
 #9BABB8
@@ -13,6 +17,10 @@ OpenSans
 RobotoMono
 Ubuntu
 */
+
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
 
 @font-face {
   font-family: GoodBoy;
@@ -102,8 +110,8 @@ nav ul a {
 }
 /* Hero section styles end */
 
-/* Random dog images styles start */
-.random_api_dog {
+/* Random dog/cat images styles start */
+.random_api_pet {
   text-align: center;
 }
 
@@ -126,37 +134,37 @@ nav ul a {
   width:400px !important;
   object-fit: contain;
 }
-/* Random dog images styles end */
+/* Random dog/cat images styles end */
 
-/* Reasons to get dog section styles start */
-.dog_reasons {
+/* Reasons to get dog/cat section styles start */
+.pet_reasons {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 0 30px 0 30px;
 }
 
-.dog_reasons h2 {
+.pet_reasons h2 {
   margin-bottom: 1.5em;
 }
 
-.dog_reasons h3 {
+.pet_reasons h3 {
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* Reasons to get dog section styles end */
+/* Reasons to get dog/cat section styles end */
 
-/* Random dog facts styles start */
-.dog_facts {
+/* Random dog/cat facts styles start */
+.pet_facts {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-.dog_facts h2 {
+.pet_facts h2 {
   margin-bottom: 40px;
 }
 
-.dog_facts p {
+.pet_facts p {
   font-family: Nunito;
   font-size: 1.8rem;
 }
@@ -177,7 +185,7 @@ nav ul a {
   background-color: #D7C0AE;
 }
 
-/* Random dog facts styles end */
+/* Random dog/cat facts styles end */
 
 /* Footer styles start */
 .page-footer {
@@ -216,16 +224,16 @@ nav ul a {
 /* ******************************** */
 
 /* Breeds page styles start */
-.dog_breeds {
+.pet_breeds {
   margin-top: 3vw;
   text-align: center;
 }
 
-.dog_breeds form label {
+.pet_breeds form label {
   font-size: 1.2rem;
 }
 
-.dog_breeds form {
+.pet_breeds form {
   margin-bottom: 8vw;
 }
 
@@ -259,38 +267,3 @@ table {
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
-
-/* Reasons to get cat section styles start */
-.cat_reasons {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding: 0 30px 0 30px;
-}
-
-.cat_reasons h2 {
-  margin-bottom: 1.5em;
-}
-
-.cat_reasons h3 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-/* Reasons to get cat section styles end */
-
-/* Random cat facts styles start */
-.cat_facts {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.cat_facts h2 {
-  margin-bottom: 40px;
-}
-
-.cat_facts p {
-  font-family: Nunito;
-  font-size: 1.8rem;
-}
-
-/* Random cat facts styles start */
