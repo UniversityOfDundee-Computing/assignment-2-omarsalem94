@@ -1,18 +1,27 @@
+// API used in the website:
+// For random dog images:
+// https://dog.ceo/dog-api
+
+// For all dog breeds and information about each breed:
+// https://api.thedogapi.com/v1/breeds
+
+// For random cat images:
+// https://api.thecatapi.com/v1/images/
+
+// For all cat breeds and information about each breed:
+// 
+
+// For random dog fact
+// https://dogapi.dog/api/v2/facts
+
+// For random cat fact
+// https://catfact.ninja/fact
+
 // Rules to activate materialize components
 $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.collapsible').collapsible();
 });
-
-// API used in the website:
-// For random dog images:
-// https://api.thedogapi.com
-
-// For all the dog breeds and information about each breed:
-// https://dog.ceo/dog-api
-
-// For random dog fact
-// https://dogapi.dog/api/v2/facts
 
 fetch(`https://dog.ceo/api/breeds/image/random/5`)
 .then(resp => resp.json())
