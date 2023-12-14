@@ -26,7 +26,10 @@ fetch(url)
   // Create image element with the breed image
   const image = document.createElement('img');
   image.src = `https://cdn2.thedogapi.com/images/${data.reference_image_id}.jpg`;
-  image.style.maxHeight = '500px';
+  image.style.maxWidth = '100%';
+  image.style.height = 'auto';
+  image.style.width = '100%';
+  // image.style.maxHeight = '500px';
   dogDetailContainer.appendChild(image);
 
   // Create a table to display dog information using Materialize
