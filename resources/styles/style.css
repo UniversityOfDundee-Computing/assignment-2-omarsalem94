@@ -93,7 +93,7 @@ nav ul a {
 }
 
 .hero .hero_text {
-  margin-top: 5vw;
+  margin-top: 9vw;
 }
 
 .hero h1 {
@@ -240,3 +240,42 @@ table {
   font-size: 1.45rem;
 }
 /* Single breed page styles end */
+
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+
+/* Reasons to get cat section styles start */
+.cat_reasons {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 30px 0 30px;
+}
+
+.cat_reasons h2 {
+  margin-bottom: 1.5em;
+}
+
+.cat_reasons h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* Reasons to get cat section styles end */
+
+/* Random cat facts styles start */
+.cat_facts {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.cat_facts h2 {
+  margin-bottom: 40px;
+}
+
+.cat_facts p {
+  font-family: Nunito;
+  font-size: 1.8rem;
+}
+
+/* Random cat facts styles start */
