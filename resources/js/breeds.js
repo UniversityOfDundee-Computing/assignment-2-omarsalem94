@@ -28,7 +28,7 @@ $(document).ready(function () {
   }
 
   // Initial fetch for a couple of breeds
-  const initialBreeds = ['Barbet', 'Beagle', 'Boerboel', 'Boxer', 'Chinook', 'Greyhound']; // Example breeds
+  const initialBreeds = ['Dogo Argentino', 'Beagle', 'Boerboel', 'Rottweiler', 'Chinook', 'German Shepherd Dog']; // Example breeds
   const cardContainer = document.getElementById('breed-card-container');
 
   // Use Promise.all to wait for all initial fetch requests to complete
