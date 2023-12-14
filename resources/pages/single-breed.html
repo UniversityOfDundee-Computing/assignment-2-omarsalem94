@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
-  <title>Good Boy - Breeds</title>
+  <title>Good Boy - Single Breed</title>
 </head>
 <body>
   <header>
@@ -36,20 +36,11 @@
     </ul>
   </header>
   <main class="container">
-    <section class="row dog_breeds">
-      <h1>Dog Breeds</h1>
-      <form action="" method="get">
-        <div class="input-field col s12">
-          <select>
-            <option value="" disabled selected>Select A breed</option>
-          </select>
-          <label>Choose from here</label>
-        </div>
-      </form>
+    <section class="row dog_breeds" id="dog-detail-container">
     </section>
-    <section class="row" id="breed-card-container">
-
-    </section>
+    <div class="row center">
+      <a class="waves-effect waves-light btn more_info" id="back-button">Back to Breeds</a>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -83,6 +74,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- <script src="../js/main.js"></script> -->
-  <script src="../js/breeds.js"></script>
+  <!-- <script src="../js/breeds.js"></script> -->
+  <script src="../js/singlebreed.js"></script>
 </body>
 </html>
