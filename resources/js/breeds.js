@@ -36,8 +36,6 @@ $(document).ready(function () {
     fetch(`https://api.thedogapi.com/v1/breeds/search?q=${breed}&api_key=${api_key}`)
       .then(resp => resp.json())
       .then(function (data) {
-        console.log(data[0].name);
-        console.log(data[0].reference_image_id);
         // Create a card and append it to the container
         const card = createCard(data[0].name, data[0].reference_image_id, data[0].id);
         cardContainer.appendChild(card);
@@ -47,20 +45,15 @@ $(document).ready(function () {
       })
   ))
   .then(() => {
-    // Fetch dog breeds from the API
-    // https://dog.ceo/api/breeds/list/all
     return fetch("https://api.thedogapi.com/v1/breeds");
   })
   .then(resp => resp.json())
   .then(function (data) {
-    console.log(data);
     
-
     // Get the select element
     const selectElement = document.querySelector('select');
 
     // Loop through the breeds and create options
-
     data.forEach(breed => {
       // Create a new option element
       const option = document.createElement('option');
@@ -68,7 +61,6 @@ $(document).ready(function () {
       // Set the value and text of the option
       option.value = breed.name;
       option.text = breed.name;
-      // console.log(breed);
 
       // Append the option to the select element
       selectElement.appendChild(option);
@@ -81,25 +73,17 @@ $(document).ready(function () {
     selectElement.addEventListener('change', function () {
       const selectedBreed = this.value;
 
-      // Fetch additional information about the selected breed
-      // https://dog.ceo/api/breed/${selectedBreed}/images/random
-
       fetch(`https://api.thedogapi.com/v1/breeds/search?q=${selectedBreed}&api_key=${api_key}`)
         .then(resp => resp.json())
         .then(function (data) {
           console.log(data);
           // Clear previous cards
           cardContainer.innerHTML = '';
+
           data.forEach(breedInfo => {
-            // console.log(breedInfo)
-            // console.log(breedInfo.name);
-            // console.log(breedInfo.reference_image_id);
             const card = createCard(breedInfo.name, breedInfo.reference_image_id, breedInfo.id);
             cardContainer.appendChild(card);
           })
-          // // Create a card for the selected breed and append it to the container
-          // const card = createCard(selectedBreed, data.message);
-          // cardContainer.appendChild(card);
         })
         .catch(function (error) {
           console.log(error);

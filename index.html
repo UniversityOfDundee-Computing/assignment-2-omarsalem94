@@ -15,14 +15,16 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Style css -->
   <link rel="stylesheet" href="./resources/styles/style.css">
   <title>Good Boy</title>
 </head>
 <body>
+  <!-- Navigation bar start -->
   <header>
     <nav>
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo"><img src="./resources/images/logo1.png" alt="" width="60px" height="60px"></a>
+        <a href="./index.html" class="brand-logo"><img src="./resources/images/logo1.png" alt="" width="60px" height="60px"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="./index.html">Home</a></li>
@@ -35,12 +37,16 @@
       <li><a href="./resources/pages/breeds.html">Breeds</a></li>
     </ul>
   </header>
+  <!-- Navigation bar end -->
+
+  <!-- Main of the website start -->
   <main class="container">
+    <!-- Hero section start -->
     <section class="hero">
       <div class="row ">
         <div class="col l6 m12 s12 hero_text">
           <h1 class="">Good Boy</h1>
-          <p class="">This website is dedicated to show appretiation to man's best friend (dog). Get to see random images, and check the most popular breeds and learn more about them.
+          <p class="">This website is dedicated to show appretiation to man's best friend (dog). Get to see random images, read random dog facts, and check the most popular breeds and learn more about them.
           </p>
         </div>
         <div class="col l6 m12 s12">
@@ -48,6 +54,9 @@
         </div>
       </div>
     </section>
+    <!-- Hero section end -->
+
+    <!-- Random dog images section start -->
     <section class="row random_api_dog">
       <div class="col l12">
         <h2>Random Dog Images</h2>
@@ -56,6 +65,9 @@
         </div>
       </div>
     </section>
+    <!-- Random dog images section end -->
+
+    <!-- Reasons to get dog section start -->
     <section class="row dog_reasons">
       <h2>Reasons why you should get a dog</h2>
         <div class="col l4 m8 s12">
@@ -74,7 +86,19 @@
           <p>Dogs are often protective of their owners and their homes, providing a sense of security. Many people feel safer knowing they have a loyal and vigilant companion.</p>
         </div>
     </section>
+    <!-- Reasons to get dog section end -->
+
+    <!-- Random dog facts section start -->
+    <section class="dog_facts center" >
+      <h2>Random Dog Fact</h2>
+      <div id="dog_fact"></div>
+      <button class="waves-effect waves-light btn random_fact" id="generate_fact_button">Click to generate new fact</button>
+    </section>
+    <!-- Random dog facts section end -->
   </main>
+  <!-- Main of the website end -->
+
+  <!-- Footer start -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -91,8 +115,8 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Links</h5>
           <ul>
-            <li><a class="black-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="black-text text-lighten-3" href="#!">Breeds</a></li>
+            <li><a class="black-text text-lighten-3" href="./index.html">Home</a></li>
+            <li><a class="black-text text-lighten-3" href="./resources/pages/breeds.html">Breeds</a></li>
           </ul>
         </div>
       </div>
@@ -103,9 +127,12 @@
       </div>
     </div>
   </footer>
+  <!-- Footer end -->
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Main javascript -->
   <script src="./resources/js/main.js"></script>
 </body>
 </html>
