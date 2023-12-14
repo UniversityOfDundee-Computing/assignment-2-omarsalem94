@@ -1,11 +1,17 @@
-
-
 /* 
 These are the colors used on this website:
 #9BABB8
 #EEE3CB
 #D7C0AE
 #967E76
+
+Fonts used:
+GoodBoy
+LittlePaws
+Nunito
+OpenSans
+RobotoMono
+Ubuntu
 */
 
 @font-face {
@@ -14,23 +20,8 @@ These are the colors used on this website:
 }
 
 @font-face {
-  font-family: GoodPawoo;
-  src: url(../fonts/good-pawoo-display-font/GoodPawooDisplay-qZd96.ttf);
-}
-
-@font-face {
-  font-family: JosefinSans;
-  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
-}
-
-@font-face {
   font-family: LittlePaws;
   src: url(../fonts/little-paws-font/LittlePaws-8MZqZ.ttf);
-}
-
-@font-face {
-  font-family: Paw;
-  src: url(../fonts/mf-paw-prints/MF\ Paw\ Prints.ttf);
 }
 
 @font-face {
@@ -53,9 +44,8 @@ These are the colors used on this website:
   src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
 }
 
-
+/* General styles for the website */
 img {
-  /* object-fit: contain; */
   width: 100%;
 }
 
@@ -64,8 +54,11 @@ body {
   font-family: Ubuntu;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: LittlePaws;
+}
 
-
+/* Navigation bar styles start */
 nav {
   background-color: #9BABB8;
   font-family: GoodBoy;
@@ -91,7 +84,9 @@ nav ul a {
   color: #000;
   font-size: 1.25em;
 }
+/* Navigation bar styles end */
 
+/* Hero section styles start */
 .hero {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -105,11 +100,12 @@ nav ul a {
   font-family: GoodBoy;
   font-size: 7rem;
 }
+/* Hero section styles end */
 
+/* Random dog images styles start */
 .random_api_dog {
   text-align: center;
 }
-
 
 .carousel {
   margin-top: 50px;
@@ -117,14 +113,12 @@ nav ul a {
 }
 
 .carousel-item img {
-  /* max-height:800px; 
-  width: auto; /* Maintain the aspect ratio */
-  margin: auto; /* Center the image horizontally */
+  margin: auto;
 }
 
 .card-carousel {
-  width: 100%; /* Set the desired width */
-  height: 400px; /* Set the desired height */
+  width: 100%;
+  height: 400px;
   object-fit: cover; /* This ensures the image maintains its aspect ratio */
 }
 
@@ -132,12 +126,13 @@ nav ul a {
   width:400px !important;
   object-fit: contain;
 }
+/* Random dog images styles end */
 
-
+/* Reasons to get dog section styles start */
 .dog_reasons {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   padding: 0 30px 0 30px;
 }
 
@@ -149,7 +144,41 @@ nav ul a {
   font-size: 2em;
   margin-bottom: 20px;
 }
+/* Reasons to get dog section styles end */
 
+/* Random dog facts styles start */
+.dog_facts {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.dog_facts h2 {
+  margin-bottom: 40px;
+}
+
+.dog_facts p {
+  font-family: Nunito;
+  font-size: 1.8rem;
+}
+
+.random_fact {
+  background-color: #9BABB8;
+}
+
+.random_fact:visited {
+  background-color: #9BABB8;
+}
+
+.random_fact:hover {
+  background-color: #D7C0AE;
+}
+
+.random_fact:active {
+  background-color: #D7C0AE;
+}
+/* Random dog facts styles end */
+
+/* Footer styles start */
 .page-footer {
   background-color: #D7C0AE !important;
 }
@@ -165,32 +194,38 @@ nav ul a {
 .footer-copyright .container {
   font-weight: 700;
 }
-
-
-
-
-
+/* Footer styles end */
 
 /* ******************************** */
+/* ******************************** */
+/* ******************************** */
 
+/* Breeds page styles start */
 .dog_breeds {
   margin-top: 3vw;
   text-align: center;
+}
+
+.dog_breeds form label {
+  font-size: 1.2rem;
 }
 
 .dog_breeds form {
   margin-bottom: 8vw;
 }
 
-
-
 .card-image {
-  width: 100%; /* Set the desired width */
-  height: 400px; /* Set the desired height */
-  object-fit: auto; /* This ensures the image maintains its aspect ratio */
+  width: 100%;
+  height: 400px;
+  object-fit: auto;
 }
+/* Breeds page styles end */
 
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
 
+/* Single breed page styles start */
 .more_info {
   background-color: #9BABB8;
 }
@@ -199,10 +234,9 @@ nav ul a {
   background-color: #D7C0AE;
 }
 
-
-
 table {
   width: 90%;
   margin: auto;
   font-size: 1.45rem;
 }
+/* Single breed page styles end */

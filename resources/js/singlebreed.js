@@ -12,13 +12,9 @@ searchString = searchString[1];
 
 let url = `https://api.thedogapi.com/v1/breeds/${searchString}&api_key=${api_key}`
  
-console.log(url);
-console.log(searchString);
-
 fetch(url)
 .then(resp => resp.json())
 .then(function (data) {
-  console.log(data);
   // Create HTML structure
   const dogDetailContainer = document.getElementById('dog-detail-container');
 
@@ -33,9 +29,9 @@ fetch(url)
   image.style.maxHeight = '500px';
   dogDetailContainer.appendChild(image);
 
-  // Create a table to display dog information using Materialize classes
+  // Create a table to display dog information using Materialize
   const table = document.createElement('table');
-  // table.setAttribute('class', 'striped')
+
   
   const propertiesToDisplay = ['bred_for', 'breed_group', 'life_span', 'temperament'];
 
