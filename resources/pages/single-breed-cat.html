@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Style css -->
   <link rel="stylesheet" href="../styles/style.css">
-  <title>Good Boy - Nice Kitty!</title>
+  <title>Good Boy - Single Breed</title>
 </head>
 <body>
   <!-- Navigation bar start -->
@@ -41,80 +41,15 @@
   </header>
   <!-- Navigation bar end -->
 
+  <!-- Main of the website start -->
   <main class="container">
-    <!-- Hero section start -->
-    <section class="hero">
-      <div class="row ">
-        <div class="col l6 m12 s12">
-          <img class="hero_image" src="../images/hero2.png" alt="">
-        </div>
-        <div class="col l6 m12 s12 hero_text">
-          <h1 class="">Nice Kitty</h1>
-          <p class="">Cats deserve some love too. Explore different cat breeds, see random images as well, and get random facts about kittens.
-          </p>
-        </div>
-      </div>
+    <!-- Single dog breed section start -->
+    <section class="row dog_breeds" id="cat-detail-container">
     </section>
-    <!-- Hero section end -->
-
-    <!-- Random cat images section start -->
-    <section class="row random_api_dog">
-      <div class="col l12">
-        <h2>Random Cat Images</h2>
-        <p>Refresh to see new images!</p>
-        <div class="carousel valign-wrapper">
-        </div>
-      </div>
-    </section>
-    <!-- Random cat images section end -->
-
-    <!-- Reasons to get cat section start -->
-    <section class="row cat_reasons">
-      <h2>Reasons why you should get a cat</h2>
-        <div class="col l4 m8 s12">
-          <i class="material-icons large">local_hospital</i>
-          <h3>Therapeutic Benefits</h3>
-          <p>The presence of a cat can have therapeutic benefits, especially for individuals dealing with stress, anxiety, or depression.</p>
-        </div>
-        <div class="col l4 m8 s12">
-          <i class="material-icons large valign-wrapper">pan_tool</i>
-          <h3>Rodent Control</h3>
-          <p>Cats are natural hunters, and having a cat can help control the population of rodents in and around your home.</p>
-        </div>
-        <div class="col l4 m8 s12">
-          <i class="material-icons large">filter_vintage</i>
-          <h3>Health Benefits</h3>
-          <p>Studies have shown that owning a cat can have positive effects on your health. The act of petting a cat can reduce stress and lower blood pressure.</p>
-        </div>
-    </section>
-    <!-- Reasons to get cat section end -->
-
-    <!-- Random cat facts section start -->
-    <section class="cat_facts center" >
-      <h2>Random Cat Fact</h2>
-      <div id="cat_fact"></div>
-      <button class="waves-effect waves-light btn random_fact" id="generate_fact_button">Click to generate new fact</button>
-    </section>
-    <!-- Random cat facts section end -->
-
-    <!-- Dog breeds drop down section start -->
-    <section class="row dog_breeds">
-      <h2>Cat Breeds</h2>
-      <form action="" method="get">
-        <div class="input-field col s12">
-          <select>
-            <option value="" disabled selected>Select A breed</option>
-          </select>
-          <label>Choose from here</label>
-        </div>
-      </form>
-    </section>
-    <!-- Dog breeds drop down section end -->
-
-    <!-- Dog breeds card section start -->
-    <section class="row" id="breed-card-container">
-    </section>
-    <!-- Dog breeds card section end -->
+    <div class="row center">
+      <a class="waves-effect waves-light btn more_info" id="back-button">Back to Breeds</a>
+    </div>
+    <!-- Single dog breed section end -->
   </main>
   <!-- Main of the website end -->
 
@@ -153,7 +88,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Cat javascript -->
-  <script src="../js/cats.js"></script>
+  <!-- Single breed javascript -->
+  <script src="../js/catSingleBreed.js"></script>
 </body>
 </html>

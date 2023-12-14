@@ -161,21 +161,22 @@ nav ul a {
   font-size: 1.8rem;
 }
 
-.random_fact {
+#generate_fact_button.random_fact {
   background-color: #9BABB8;
 }
 
-.random_fact:visited {
+#generate_fact_button.random_fact:visited {
   background-color: #9BABB8;
 }
 
-.random_fact:hover {
+#generate_fact_button.random_fact:hover {
   background-color: #D7C0AE;
 }
 
-.random_fact:active {
+#generate_fact_button.random_fact:active {
   background-color: #D7C0AE;
 }
+
 /* Random dog facts styles end */
 
 /* Footer styles start */
@@ -194,6 +195,20 @@ nav ul a {
 .footer-copyright .container {
   font-weight: 700;
 }
+
+.back-to-top {
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  font-size: 14px;
+  text-decoration: none;
+  color: #9BABB8;
+}
+
+.back-to-top:hover {
+  color: #D7C0AE;
+}
+
 /* Footer styles end */
 
 /* ******************************** */
