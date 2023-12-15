@@ -161,7 +161,6 @@ Promise.all(initialBreeds.map(breed =>
     fetch(`https://api.thecatapi.com/v1/breeds/search?q=${selectedBreed}&api_key=${api_key}`)
       .then(resp => resp.json())
       .then(function (data) {
-        console.log(data);
         // Clear previous cards
         cardContainer.innerHTML = '';
 
