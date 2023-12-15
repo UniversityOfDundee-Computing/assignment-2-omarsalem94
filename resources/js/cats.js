@@ -54,7 +54,6 @@ fetch(`https://api.thecatapi.com/v1/images/search?limit=10`)
   fetch('https://catfact.ninja/fact')
   .then(resp => resp.json())
   .then(function(data) {
-    console.log(data);
     // Get the div where the cat fact will be displayed
     const catFactDiv = document.getElementById('cat_fact');
 
@@ -122,7 +121,6 @@ Promise.all(initialBreeds.map(breed =>
   fetch(`https://api.thecatapi.com/v1/breeds/search?q=${breed}&api_key=${api_key}`)
     .then(resp => resp.json())
     .then(function (data) {
-      console.log(data);
       // Create a card and append it to the container
       const card = createCard(data[0].name, data[0].reference_image_id, data[0].id);
       cardContainer.appendChild(card);
@@ -163,7 +161,6 @@ Promise.all(initialBreeds.map(breed =>
     fetch(`https://api.thecatapi.com/v1/breeds/search?q=${selectedBreed}&api_key=${api_key}`)
       .then(resp => resp.json())
       .then(function (data) {
-        console.log(data);
         // Clear previous cards
         cardContainer.innerHTML = '';
 
