@@ -33,6 +33,7 @@ fetch(url)
 
   // Create a table to display dog information using Materialize
   const table = document.createElement('table');
+  table.classList.add('responsive-table');
 
   
   const propertiesToDisplay = ['bred_for', 'breed_group', 'life_span', 'temperament'];

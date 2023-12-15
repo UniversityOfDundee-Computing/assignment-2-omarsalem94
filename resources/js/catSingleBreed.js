@@ -35,6 +35,7 @@ fetch(url)
 
   // Create a table to display cat information using Materialize
   const table = document.createElement('table');
+  table.classList.add('responsive-table');
 
   
   const propertiesToDisplay = ['description', 'origin', 'life_span', 'temperament'];
