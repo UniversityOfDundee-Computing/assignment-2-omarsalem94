@@ -77,7 +77,6 @@ $(document).ready(function () {
       fetch(`https://api.thedogapi.com/v1/breeds/search?q=${selectedBreed}&api_key=${api_key}`)
         .then(resp => resp.json())
         .then(function (data) {
-          console.log(data);
           // Clear previous cards
           cardContainer.innerHTML = '';
 
