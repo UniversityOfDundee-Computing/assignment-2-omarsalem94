@@ -16,7 +16,6 @@ let url = `https://api.thecatapi.com/v1/breeds/${searchString}?${api_key}`;
 fetch(url)
 .then(resp => resp.json())
 .then(function (data) {
-  console.log(data);
   // Create HTML structure
   const catDetailContainer = document.getElementById('cat-detail-container');
 
